@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  overflow: hidden;
+  cursor: none;
+  font-family: "Nunito", sans-serif;
+}
+iframe {
+  display: none;
+}
+//Lupa animada
+#lupa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  div:nth-child(1) {
+    border: 1px outset #2dd122;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    animation: border 2s infinite;
+    box-shadow: 0 0 3px #2dd122;
+  }
+  div:nth-child(2) {
+    border: 1px outset #2dd122;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    transform: rotate(90);
+    animation: border 2s infinite;
+    box-shadow: 0 0 3px #2dd122;
+  }
+  div:nth-child(3) {
+    width: 19px;
+    height: 19px;
+    position: fixed;
+    font-size: 25px;
+    color: #778cff;
+    background: #fff;
+    box-shadow: inset -2px -2px 5px #0d50a1;
+    border-radius: 50%;
+  }
+}
+@keyframes border {
+  25% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+//Menu libreria de cartas
+.card-container {
+  position: relative;
+  h1 {
+    color: #fff;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+  .card-content {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    border: 10px solid transparent;
+    border-image: radial-gradient(
+        circle,
+        rgba(148, 143, 140, 1) 0%,
+        rgba(78, 76, 69, 1) 39%,
+        rgba(148, 143, 140, 1) 100%
+      )
+      1;
+    background: url('img/num.jpg') no-repeat center;
+    object-fit: cover;
+    div.box {
+      width: 30px;
+      height: 40px;
+      border: 1px solid #676665b3;
+      box-shadow: inset 0 0 10px;
+      .card-data {
+        width: 100%;
+        height: 100%;
+        img {
+          display: block;
+          width: inherit;
+          height: inherit;
+        }
+      }
+      .txt {
+        width: 100%;
+        height: 62px;
+        max-width: 320px;
+        position: absolute;
+        bottom: -28%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #919190;
+        color: #fff;
+        padding: 0 10px;
+        z-index: -1;
+        p {
+          width: 100%;
+          max-width: 70px;
+          background: #101009;
+          text-align: center;
+          margin: 4px 0 4px 0;
+        }
+        h3 {
+          max-width: 100%;
+          height: 30px;
+          background: #101009;
+          padding: 2px 0 2px 25px;
+        }
+      }
+    }
+  }
+}
