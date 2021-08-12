@@ -3,18 +3,263 @@
   padding: 0;
   box-sizing: border-box;
 }
+/*-----------------------------*\
+     $COLORS
+\*-----------------------------*/
+
+$color_black: #000000;
+$color_green: #2dd122;
+$color_purple: #778cff;
+$color_blue: #0d50a1;
+$color_darkBlue: #151D3D;
+$color_white: #ffffff;
+$color_grey: #919190;
+$color_darkBlack: #101009;
+$backgroundGradientBlue: linear-gradient(135deg, rgba(21, 29, 61, 1) 0%, rgba(34, 44, 84, 1) 100%);
+/*-----------------------------*\
+     $FONTS
+\*-----------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+$fontFamily:'Nunito', sans-serif;
+$fontRegular: 400;
+$fontSemiBold: 600;
+$letterSpacing: 3px;
+/*-----------------------------*\
+     $GRID
+\*-----------------------------*/
+
+$porcentWidth: 100%;
+$maxWidth: 320px;
+$maxWidthcontent: 600px;
+$porcentHeight: 100%;
+/*-----------------------------*\
+     $LUPA ANIMATION
+\*-----------------------------*/
+
+$borderCross: 1px outset $color_green;
+$boxShadowCross: 0 0 3px $color_green;
+$boxShadowLupa: inset -2px -2px 5px $color_blue;
+/*-----------------------------*\
+     $CONSTANT
+\*-----------------------------*/
+
+$grid: grid;
+$gridColumns: repeat(10, 1fr);
+$backgroundUrl: url('../img/collection.jpg') no-repeat center;
+$spaceX4: 4px;
+$spaceX8: 8px;
+/*-----------------------------*\
+     $LUPA ANIMATION
+\*-----------------------------*/
+
+$borderCross: 1px outset $color_green;
+$boxShadowCross: 0 0 3px $color_green;
+$boxShadowLupa: inset -2px -2px 5px $color_blue;
+$animation: border 2s infinite;
+/*-----------------------------*\
+     $MIXIN
+\*-----------------------------*/
+
+@mixin responsive($breakpoints) {
+  @media only screen and(max-width: $breakpoints) {
+    @content;
+  }
+}
+@mixin loop--grid {
+  @for $i from 0 through 100 {
+    .card-#{$i} {
+      width: 30px;
+      height: 40px;
+      border: 1px dotted $color_grey;
+      box-shadow: inset 0 0 10px;
+      .card-content {
+        .name {
+          display: none;
+        }
+        .card-box {
+          .card-perspective {
+            .card-transform {
+              .front {
+                width: $porcentWidth;
+                height: $porcentHeight;
+                img {
+                  width: inherit;
+                  height: inherit;
+                }
+              }
+              .back {
+                width: $porcentWidth;
+                height: $porcentHeight;
+                display: none;
+                img {
+                  width: inherit;
+                  height: inherit;
+                }
+              }
+            }
+          }
+          .card-data {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .card-view {
+    width: $porcentWidth;
+    height: 600px;
+    top: 0;
+    left: 0;
+    background: $color-black;
+    position: absolute;
+    border: none;
+    box-shadow: none;
+    overflow: hidden;
+    .card-content {
+      width: $porcentWidth;
+      max-width: $maxWidthcontent;
+      margin: 30px auto;
+      color: $color_white;
+      .name {
+        display: block;
+        background: $color_grey;
+        padding: $spaceX8;
+        p {
+          background: $color_darkBlack;
+          max-width: $maxWidth - 280px;
+          text-align: center;
+          padding: $spaceX4;
+          font-weight: $fontRegular;
+        }
+        h3 {
+          background: $color_darkBlack;
+          padding: $spaceX4;
+          margin-top: $spaceX8;
+          font-weight: $fontSemiBold;
+        }
+      }
+      .card-box {
+        display: flex;
+        .card-perspective {
+          background: transparent;
+          width: 400px;
+          height: 300px;
+          @include responsive($maxWidthcontent) {
+            width: 300px;
+            height: 250px;
+          }
+          perspective: 1000px;
+          .card-transform {
+            position: relative;
+            width: $porcentWidth;
+            height: $porcentHeight;
+            text-align: center;
+            transition: transform 1s;
+            transform-style: preserve-3d;
+          }
+          .card-transform {
+            transform: rotateY(-180deg);
+          }
+          .front, .back {
+            position: absolute;
+            backface-visibility: hidden;
+            img {
+              animation: cardBox 0.4s;
+            }
+          }
+          .back {
+            display: block !important;
+            transform: rotateY(-180deg);
+          }
+        }
+        .card-data {
+          display: block;
+          width: $porcentWidth;
+          background: $color_grey;
+          padding: $spaceX8;
+          overflow: hidden;
+          .type {
+            display: flex;
+            align-items: center;
+            background: $backgroundGradientBlue;
+            padding: $spaceX4;
+            img {
+              width: 20px;
+              height: 20px;
+            }
+            h2 {
+              margin-left: 10px;
+              font-weight: $fontSemiBold;
+            }
+          }
+          .guardian {
+            background: $backgroundGradientBlue;
+            padding: $spaceX4;
+            margin: $spaceX8 0;
+            h3 {
+              margin-bottom: $spaceX4;
+              font-weight: $fontSemiBold;
+            }
+            .elem1, .elem2 {
+              display: flex;
+              align-items: center;
+              h4 {
+                margin-right: 10px;
+                margin-left: 10px;
+                font-weight: $fontSemiBold;
+              }
+              p {
+                font-weight: $fontRegular;
+              }
+            }
+          }
+          .txt {
+            background: $backgroundGradientBlue;
+            padding: $spaceX4;
+            height: $porcentHeight;
+            p {
+              font-weight: $fontRegular;
+            }
+          }
+        }
+      }
+    }
+    @keyframes cardBox {
+      from {
+        transform: scale(0.4);
+      }
+      to {
+        transform: scale(1);
+      }
+    }
+  }
+}
+/*-----------------------------*\
+     $EXTEND
+\*-----------------------------*/
+
+%grid__content {
+  width: $porcentWidth;
+  max-width: $maxWidth;
+  display: $grid;
+  grid-template-columns: $gridColumns;
+  border: $spaceX8 inset $color_grey;
+  background: $backgroundUrl;
+  background-size: cover;
+  @include loop--grid;
+}
 body {
   width: 100vw;
   height: 100vh;
-  background: #000;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background: $color_black;
   cursor: none;
-  font-family: "Nunito", sans-serif;
+  overflow-x: hidden;
+  font-family: $fontFamily;
 }
-iframe {
-  display: none;
-}
-//Lupa animada
+//LUPA ANIMADA
 #lupa {
   position: absolute;
   top: 0;
@@ -24,30 +269,30 @@ iframe {
   justify-content: center;
   z-index: 1;
   div:nth-child(1) {
-    border: 1px outset #2dd122;
-    width: 100%;
+    border: $borderCross;
+    width: $porcentWidth;
     position: fixed;
     left: 0;
-    animation: border 2s infinite;
-    box-shadow: 0 0 3px #2dd122;
+    animation: $animation;
+    box-shadow: $boxShadowCross;
   }
   div:nth-child(2) {
-    border: 1px outset #2dd122;
-    height: 100%;
+    border: $borderCross;
+    height: $porcentHeight;
     position: fixed;
     top: 0;
     transform: rotate(90);
-    animation: border 2s infinite;
-    box-shadow: 0 0 3px #2dd122;
+    animation: $animation;
+    box-shadow: $boxShadowCross;
   }
   div:nth-child(3) {
     width: 19px;
     height: 19px;
     position: fixed;
     font-size: 25px;
-    color: #778cff;
-    background: #fff;
-    box-shadow: inset -2px -2px 5px #0d50a1;
+    color: $color_purple;
+    background: $color_white;
+    box-shadow: $boxShadowLupa;
     border-radius: 50%;
   }
 }
@@ -59,71 +304,35 @@ iframe {
     opacity: 1;
   }
 }
-//Menu libreria de cartas
 .card-container {
-  position: relative;
   h1 {
-    color: #fff;
+    color: $color_white;
     text-align: center;
-    letter-spacing: 3px;
+    letter-spacing: $letterSpacing;
+    font-weight: $fontSemiBold;
   }
-  .card-content {
-    width: 100%;
-    height: auto;
-    max-width: 320px;
-    margin: 20px auto;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    border: 10px solid transparent;
-    border-image: radial-gradient(
-        circle,
-        rgba(148, 143, 140, 1) 0%,
-        rgba(78, 76, 69, 1) 39%,
-        rgba(148, 143, 140, 1) 100%
-      )
-      1;
-    background: url('img/num.jpg') no-repeat center;
-    object-fit: cover;
-    div.box {
-      width: 30px;
-      height: 40px;
-      border: 1px solid #676665b3;
-      box-shadow: inset 0 0 10px;
-      .card-data {
-        width: 100%;
-        height: 100%;
-        img {
-          display: block;
-          width: inherit;
-          height: inherit;
-        }
-      }
-      .txt {
-        width: 100%;
-        height: 62px;
-        max-width: 320px;
-        position: absolute;
-        bottom: -28%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #919190;
-        color: #fff;
-        padding: 0 10px;
-        z-index: -1;
-        p {
-          width: 100%;
-          max-width: 70px;
-          background: #101009;
-          text-align: center;
-          margin: 4px 0 4px 0;
-        }
-        h3 {
-          max-width: 100%;
-          height: 30px;
-          background: #101009;
-          padding: 2px 0 2px 25px;
-        }
-      }
+  .card-grid {
+    @extend %grid__content;
+  }
+  .card-comment {
+    width: $porcentWidth;
+    max-width: $maxWidth;
+    background: $color_grey;
+    color: $color_white;
+    padding: $spaceX8;
+    margin-top: 10px;
+    p {
+      background: $color_darkBlack;
+      max-width: $maxWidth - 280px;
+      text-align: center;
+      padding: $spaceX4;
+      font-weight: $fontRegular;
+    }
+    h3 {
+      background: $color_darkBlack;
+      padding: $spaceX4;
+      margin-top: $spaceX8;
+      font-weight: $fontSemiBold;
     }
   }
 }

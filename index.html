@@ -1,173 +1,487 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" href="main.css">
-  <title>MENU LIBRARY</title>
-</head>
-
-<body>
-  <div id="lupa">
-    <div></div>
-    <div></div>
-    <div class="fas fa-search"></div>
-  </div>
-
-  <div class="card-container">
-    <h1>&lt; 9/100 &gt;</h1>
-    <div class="card-content">
-      <div class="box">
-        <div class="card-data">
-          <img src="img/card/0.jpg">
-        </div>
-        <div class="txt">
-          <p>0</p>
-          <h3></h3>
-        </div>
-      </div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box">
-        <div class="card-data">
-          <img src="img/card/1.jpg">
-        </div>
-      </div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box">
-        <div class="card-data">
-          <img src="img/card/2.jpg">
-        </div>
-      </div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box">
-        <div class="card-data">
-          <img src="img/card/3.jpg">
-        </div>
-      </div>
-      <div class="box"></div>
-      <div class="box">
-        <div class="card-data">
-          <img src="img/card/4.jpg">
-        </div>
-      </div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box">
-        <div class="card-data">
-          <img src="img/card/5.jpg">
-        </div>
-      </div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box">
-        <div class="card-data">
-          <img src="img/card/6.jpg">
-        </div>
-      </div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box">
-        <div class="card-data">
-          <img src="img/card/7.jpg">
-        </div>
-      </div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box">
-        <div class="card-data">
-          <img src="img/card/8.jpg">
-        </div>
-      </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MENU LIBRARY</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div id="lupa">
+      <div></div>
+      <div></div>
+      <div class="fas fa-search"></div>
     </div>
-  </div>
-  </div>
-
- <audio id="audio" src="audio/Library Menu.mp3" loop autoplay></audio>
- <script src="js/app.js"></script>
-</body>
-
+    <div class="card-container">
+      <h1>&lt; 9/100 &gt;</h1>
+      <div class="card-grid" id="selectCard">
+        <div class="card-1">
+          <div class="card-content">
+            <div class="card-box">
+              <div class="card-perspective">
+                <div class="card-transform">
+                  <div class="front">
+                    <img src="img/card/back.webp">
+                  </div>
+                  <div class="back">
+                    <img src="img/card/001.webp">
+                  </div>
+                </div>
+              </div>
+              <div class="card-data">
+                <div class="type">
+                  <img src="img/card/type/dragon.webp">
+                  <h2>Dragon</h2>
+                </div>
+                <div class="guardian">
+                  <h3>GUARDIAN STAR</h3>
+                  <div class="elem1">
+                    <h4>☉</h4>
+                    <p>Sun</p>
+                  </div>
+                  <div class="elem2">
+                    <h4>♂</h4>
+                    <p>Mars</p>
+                  </div>
+                </div>
+                <div class="txt">
+                  <p>An extremely rare card with unsurpassed attackand defense power.</p>
+                </div>
+              </div>
+            </div>
+            <div class="name">
+              <p>001</p>
+              <h3>Blue-eyes White Dragon</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card-2"></div>
+        <div class="card-3"></div>
+        <div class="card-4"></div>
+        <div class="card-5"></div>
+        <div class="card-6"></div>
+        <div class="card-7"></div>
+        <div class="card-8"></div>
+        <div class="card-9"></div>
+        <div class="card-10"></div>
+        <div class="card-11"></div>
+        <div class="card-12"></div>
+        <div class="card-13"></div>
+        <div class="card-14"></div>
+        <div class="card-15"></div>
+        <div class="card-16">
+          <div class="card-content">
+            <div class="card-box">
+              <div class="card-perspective">
+                <div class="card-transform">
+                  <div class="front">
+                    <img src="img/card/back.webp">
+                  </div>
+                  <div class="back">
+                    <img src="img/card/016.webp">
+                  </div>
+                </div>
+              </div>
+              <div class="card-data">
+                <div class="type">
+                  <img src="img/card/type/spellcaster.webp">
+                  <h2>Spellcaster</h2>
+                </div>
+                <div class="guardian">
+                  <h3>GUARDIAN STAR</h3>
+                  <div class="elem1">
+                    <h4>♀</h4>
+                    <p>Venus</p>
+                  </div>
+                  <div class="elem2">
+                    <h4>☉</h4>
+                    <p>Sun</p>
+                  </div>
+                </div>
+                <div class="txt">
+                  <p>A sorcerer capable of bending time to his will. Though not powerfull at first glance, appearances can be deceiving.</p>
+                </div>
+              </div>
+            </div>
+            <div class="name">
+              <p>016</p>
+              <h3>Time Wizard</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card-17"></div>
+        <div class="card-18"></div>
+        <div class="card-19"></div>
+        <div class="card-20"></div>
+        <div class="card-21"></div>
+        <div class="card-22">
+          <div class="card-content">
+            <div class="card-box">
+              <div class="card-perspective">
+                <div class="card-transform">
+                  <div class="front">
+                    <img src="img/card/back.webp">
+                  </div>
+                  <div class="back">
+                    <img src="img/card/022.webp">
+                  </div>
+                </div>
+              </div>
+              <div class="card-data">
+                <div class="type">
+                  <img src="img/card/type/fiend.webp">
+                  <h2>Fiend</h2>
+                </div>
+                <div class="guardian">
+                  <h3>GUARDIAN STAR</h3>
+                  <div class="elem1">
+                    <h4>♇</h4>
+                    <p>Moon</p>
+                  </div>
+                  <div class="elem2">
+                    <h4>☾</h4>
+                    <p>Pluto</p>
+                  </div>
+                </div>
+                <div class="txt">
+                  <p>An entity with dark powers for confusing
+                    the enemy. Among the FIEND class of
+                  monsters, this is a pretty rare card.</p>
+                </div>
+              </div>
+            </div>
+            <div class="name">
+              <p>022</p>
+              <h3>Summoned Skull</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card-23"></div>
+        <div class="card-24"></div>
+        <div class="card-25"></div>
+        <div class="card-26"></div>
+        <div class="card-27"></div>
+        <div class="card-28"></div>
+        <div class="card-29"></div>
+        <div class="card-30"></div>
+        <div class="card-31"></div>
+        <div class="card-32"></div>
+        <div class="card-33"></div>
+        <div class="card-34"></div>
+        <div class="card-35">
+          <div class="card-content">
+            <div class="card-box">
+              <div class="card-perspective">
+                <div class="card-transform">
+                  <div class="front">
+                    <img src="img/card/back.webp">
+                  </div>
+                  <div class="back">
+                    <img src="img/card/035.webp">
+                  </div>
+                </div>
+              </div>
+              <div class="card-data">
+                <div class="type">
+                  <img src="img/card/type/spellcaster.webp">
+                  <h2>Spellcaster</h2>
+                </div>
+                <div class="guardian">
+                  <h3>GUARDIAN STAR</h3>
+                  <div class="elem1">
+                    <h4>☿</h4>
+                    <p>Mercury</p>
+                  </div>
+                  <div class="elem2">
+                    <h4>♂</h4>
+                    <p>Mars</p>
+                  </div>
+                </div>
+                <div class="txt">
+                  <p>The ultimate wizard in terms of attack and defense.</p>
+                </div>
+              </div>
+            </div>
+            <div class="name">
+              <p>035</p>
+              <h3>Dark Magician</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card-36"></div>
+        <div class="card-37"></div>
+        <div class="card-38"></div>
+        <div class="card-39"></div>
+        <div class="card-40"></div>
+        <div class="card-41"></div>
+        <div class="card-42"></div>
+        <div class="card-43"></div>
+        <div class="card-44"></div>
+        <div class="card-45"></div>
+        <div class="card-46"></div>
+        <div class="card-47"></div>
+        <div class="card-48"></div>
+        <div class="card-49"></div>
+        <div class="card-50"></div>
+        <div class="card-51"></div>
+        <div class="card-52"></div>
+        <div class="card-53"></div>
+        <div class="card-54"></div>
+        <div class="card-55"></div>
+        <div class="card-56"></div>
+        <div class="card-57"></div>
+        <div class="card-58">
+          <div class="card-content">
+            <div class="card-box">
+              <div class="card-perspective">
+                <div class="card-transform">
+                  <div class="front">
+                    <img src="img/card/back.webp">
+                  </div>
+                  <div class="back">
+                    <img src="img/card/058.webp">
+                  </div>
+                </div>
+              </div>
+              <div class="card-data">
+                <div class="type">
+                  <img src="img/card/type/fiend.webp">
+                  <h2>Fiend</h2>
+                </div>
+                <div class="guardian">
+                  <h3>GUARDIAN STAR</h3>
+                  <div class="elem1">
+                    <h4>☿</h4>
+                    <p>Mercury</p>
+                  </div>
+                  <div class="elem2">
+                    <h4>♄</h4>
+                    <p>Saturn</p>
+                  </div>
+                </div>
+                <div class="txt">
+                  <p>By itself, this small creature may
+                    not seem like much. But in the dark,
+                    it attacks in numbers as a formidable
+                  force.</p>
+                </div>
+              </div>
+            </div>
+            <div class="name">
+              <p>058</p>
+              <h3>Kuriboh</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card-59"></div>
+        <div class="card-60"></div>
+        <div class="card-61"></div>
+        <div class="card-62">
+          <div class="card-content">
+            <div class="card-box">
+              <div class="card-perspective">
+                <div class="card-transform">
+                  <div class="front">
+                    <img src="img/card/back.webp">
+                  </div>
+                  <div class="back">
+                    <img src="img/card/062.webp">
+                  </div>
+                </div>
+              </div>
+              <div class="card-data">
+                <div class="type">
+                  <img src="img/card/type/winged_beast.webp">
+                  <h2>WingedBeast</h2>
+                </div>
+                <div class="guardian">
+                  <h3>GUARDIAN STAR</h3>
+                  <div class="elem1">
+                    <h4>♄</h4>
+                    <p>Saturn</p>
+                  </div>
+                  <div class="elem2">
+                    <h4>♆</h4>
+                    <p>Neptune</p>
+                  </div>
+                </div>
+                <div class="txt">
+                  <p>A human-shaped animal with wings.
+                    beautiful to watch, but lethal when
+                  engaged in battle.</p>
+                </div>
+              </div>
+            </div>
+            <div class="name">
+              <p>062</p>
+              <h3>Harpie Lady</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card-63"></div>
+        <div class="card-64"></div>
+        <div class="card-65"></div>
+        <div class="card-66"></div>
+        <div class="card-67"></div>
+        <div class="card-68"></div>
+        <div class="card-69"></div>
+        <div class="card-70"></div>
+        <div class="card-71"></div>
+        <div class="card-72"></div>
+        <div class="card-73"></div>
+        <div class="card-74">
+          <div class="card-content">
+            <div class="card-box">
+              <div class="card-perspective">
+                <div class="card-transform">
+                  <div class="front">
+                    <img src="img/card/back.webp">
+                  </div>
+                  <div class="back">
+                    <img src="img/card/074.webp">
+                  </div>
+                </div>
+              </div>
+              <div class="card-data">
+                <div class="type">
+                  <img src="img/card/type/rock.webp">
+                  <h2>Rock</h2>
+                </div>
+                <div class="guardian">
+                  <h3>GUARDIAN STAR</h3>
+                  <div class="elem1">
+                    <h4>⛢</h4>
+                    <p>Uranus</p>
+                  </div>
+                  <div class="elem2">
+                    <h4>♀</h4>
+                    <p>Venus</p>
+                  </div>
+                </div>
+                <div class="txt">
+                  <p>A giant warrior made of
+                    stone. A punch from this creature
+                  has earth-shaking results.</p>
+                </div>
+              </div>
+            </div>
+            <div class="name">
+              <p>074</p>
+              <h3>Giant Soldier of Stone</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card-75"></div>
+        <div class="card-76"></div>
+        <div class="card-77"></div>
+        <div class="card-78"></div>
+        <div class="card-79"></div>
+        <div class="card-80"></div>
+        <div class="card-81"></div>
+        <div class="card-82">
+          <div class="card-content">
+            <div class="card-box">
+              <div class="card-perspective">
+                <div class="card-transform">
+                  <div class="front">
+                    <img src="img/card/back.webp">
+                  </div>
+                  <div class="back">
+                    <img src="img/card/082.webp">
+                  </div>
+                </div>
+              </div>
+              <div class="card-data">
+                <div class="type">
+                  <img src="img/card/type/dragon.webp">
+                  <h2>Dragon</h2>
+                </div>
+                <div class="guardian">
+                  <h3>GUARDIAN STAR</h3>
+                  <div class="elem1">
+                    <h4>☾</h4>
+                    <p>Moon</p>
+                  </div>
+                  <div class="elem2">
+                    <h4>♆</h4>
+                    <p>Neptune</p>
+                  </div>
+                </div>
+                <div class="txt">
+                  <p>A very rare card with a high-level
+                  ATK factor.</p>
+                </div>
+              </div>
+            </div>
+            <div class="name">
+              <p>082</p>
+              <h3>Red-eyes B. Dragon</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card-83"></div>
+        <div class="card-84"></div>
+        <div class="card-85"></div>
+        <div class="card-86"></div>
+        <div class="card-87"></div>
+        <div class="card-88"></div>
+        <div class="card-89"></div>
+        <div class="card-90"></div>
+        <div class="card-91"></div>
+        <div class="card-92"></div>
+        <div class="card-93"></div>
+        <div class="card-94"></div>
+        <div class="card-95"></div>
+        <div class="card-96"></div>
+        <div class="card-97"></div>
+        <div class="card-98"></div>
+        <div class="card-99">
+          <div class="card-content">
+            <div class="card-box">
+              <div class="card-perspective">
+                <div class="card-transform">
+                  <div class="front">
+                    <img src="img/card/back.webp">
+                  </div>
+                  <div class="back">
+                    <img src="img/card/099.webp">
+                  </div>
+                </div>
+              </div>
+              <div class="card-data">
+                <div class="type">
+                  <img src="img/card/type/zombie.webp">
+                  <h2>Zombie</h2>
+                </div>
+                <div class="guardian">
+                  <h3>GUARDIAN STAR</h3>
+                  <div class="elem1">
+                    <h4>♃</h4>
+                    <p>Jupiter</p>
+                  </div>
+                  <div class="elem2">
+                    <h4>♆</h4>
+                    <p>Neptune</p>
+                  </div>
+                </div>
+                <div class="txt">
+                  <p>This pumkin king strikes at
+                    its enemies with its long
+                  tentacles.</p>
+                </div>
+              </div>
+            </div>
+            <div class="name">
+              <p>099</p>
+              <h3>Pumpking the King of Ghosts</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card-100"></div>
+      </div>
+      <div class="card-comment"></div>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
 </html>

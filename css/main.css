@@ -1,0 +1,2435 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*-----------------------------*\
+     $COLORS
+\*-----------------------------*/
+/*-----------------------------*\
+     $FONTS
+\*-----------------------------*/
+/*-----------------------------*\
+     $GRID
+\*-----------------------------*/
+/*-----------------------------*\
+     $LUPA ANIMATION
+\*-----------------------------*/
+/*-----------------------------*\
+     $CONSTANT
+\*-----------------------------*/
+/*-----------------------------*\
+     $LUPA ANIMATION
+\*-----------------------------*/
+/*-----------------------------*\
+     $MIXIN
+\*-----------------------------*/
+/*-----------------------------*\
+     $EXTEND
+\*-----------------------------*/
+.card-container .card-grid {
+  width: 100%;
+  max-width: 320px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  border: 8px inset #919190;
+  background: url("../img/collection.jpg") no-repeat center;
+  background-size: cover; }
+  .card-container .card-grid .card-0 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-0 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-0 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-0 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-0 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-0 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-0 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-1 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-1 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-1 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-1 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-1 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-1 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-1 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-2 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-2 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-2 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-2 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-2 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-2 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-2 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-3 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-3 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-3 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-3 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-3 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-3 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-3 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-4 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-4 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-4 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-4 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-4 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-4 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-4 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-5 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-5 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-5 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-5 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-5 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-5 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-5 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-6 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-6 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-6 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-6 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-6 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-6 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-6 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-7 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-7 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-7 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-7 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-7 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-7 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-7 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-8 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-8 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-8 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-8 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-8 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-8 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-8 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-9 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-9 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-9 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-9 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-9 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-9 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-9 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-10 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-10 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-10 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-10 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-10 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-10 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-10 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-11 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-11 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-11 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-11 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-11 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-11 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-11 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-12 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-12 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-12 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-12 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-12 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-12 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-12 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-13 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-13 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-13 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-13 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-13 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-13 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-13 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-14 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-14 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-14 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-14 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-14 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-14 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-14 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-15 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-15 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-15 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-15 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-15 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-15 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-15 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-16 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-16 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-16 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-16 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-16 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-16 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-16 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-17 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-17 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-17 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-17 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-17 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-17 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-17 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-18 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-18 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-18 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-18 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-18 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-18 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-18 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-19 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-19 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-19 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-19 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-19 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-19 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-19 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-20 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-20 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-20 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-20 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-20 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-20 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-20 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-21 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-21 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-21 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-21 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-21 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-21 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-21 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-22 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-22 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-22 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-22 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-22 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-22 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-22 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-23 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-23 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-23 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-23 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-23 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-23 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-23 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-24 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-24 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-24 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-24 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-24 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-24 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-24 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-25 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-25 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-25 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-25 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-25 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-25 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-25 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-26 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-26 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-26 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-26 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-26 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-26 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-26 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-27 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-27 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-27 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-27 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-27 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-27 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-27 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-28 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-28 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-28 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-28 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-28 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-28 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-28 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-29 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-29 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-29 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-29 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-29 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-29 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-29 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-30 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-30 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-30 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-30 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-30 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-30 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-30 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-31 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-31 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-31 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-31 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-31 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-31 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-31 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-32 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-32 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-32 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-32 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-32 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-32 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-32 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-33 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-33 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-33 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-33 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-33 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-33 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-33 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-34 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-34 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-34 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-34 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-34 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-34 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-34 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-35 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-35 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-35 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-35 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-35 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-35 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-35 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-36 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-36 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-36 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-36 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-36 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-36 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-36 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-37 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-37 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-37 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-37 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-37 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-37 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-37 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-38 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-38 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-38 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-38 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-38 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-38 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-38 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-39 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-39 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-39 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-39 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-39 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-39 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-39 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-40 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-40 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-40 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-40 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-40 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-40 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-40 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-41 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-41 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-41 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-41 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-41 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-41 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-41 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-42 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-42 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-42 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-42 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-42 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-42 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-42 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-43 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-43 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-43 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-43 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-43 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-43 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-43 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-44 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-44 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-44 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-44 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-44 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-44 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-44 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-45 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-45 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-45 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-45 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-45 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-45 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-45 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-46 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-46 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-46 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-46 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-46 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-46 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-46 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-47 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-47 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-47 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-47 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-47 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-47 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-47 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-48 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-48 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-48 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-48 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-48 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-48 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-48 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-49 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-49 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-49 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-49 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-49 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-49 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-49 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-50 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-50 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-50 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-50 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-50 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-50 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-50 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-51 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-51 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-51 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-51 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-51 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-51 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-51 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-52 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-52 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-52 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-52 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-52 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-52 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-52 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-53 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-53 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-53 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-53 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-53 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-53 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-53 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-54 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-54 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-54 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-54 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-54 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-54 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-54 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-55 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-55 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-55 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-55 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-55 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-55 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-55 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-56 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-56 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-56 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-56 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-56 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-56 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-56 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-57 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-57 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-57 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-57 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-57 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-57 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-57 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-58 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-58 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-58 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-58 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-58 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-58 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-58 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-59 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-59 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-59 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-59 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-59 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-59 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-59 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-60 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-60 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-60 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-60 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-60 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-60 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-60 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-61 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-61 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-61 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-61 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-61 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-61 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-61 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-62 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-62 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-62 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-62 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-62 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-62 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-62 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-63 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-63 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-63 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-63 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-63 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-63 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-63 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-64 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-64 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-64 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-64 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-64 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-64 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-64 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-65 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-65 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-65 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-65 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-65 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-65 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-65 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-66 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-66 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-66 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-66 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-66 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-66 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-66 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-67 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-67 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-67 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-67 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-67 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-67 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-67 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-68 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-68 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-68 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-68 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-68 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-68 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-68 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-69 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-69 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-69 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-69 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-69 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-69 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-69 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-70 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-70 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-70 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-70 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-70 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-70 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-70 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-71 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-71 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-71 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-71 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-71 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-71 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-71 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-72 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-72 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-72 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-72 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-72 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-72 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-72 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-73 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-73 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-73 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-73 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-73 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-73 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-73 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-74 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-74 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-74 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-74 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-74 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-74 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-74 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-75 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-75 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-75 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-75 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-75 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-75 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-75 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-76 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-76 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-76 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-76 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-76 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-76 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-76 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-77 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-77 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-77 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-77 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-77 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-77 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-77 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-78 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-78 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-78 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-78 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-78 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-78 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-78 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-79 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-79 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-79 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-79 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-79 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-79 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-79 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-80 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-80 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-80 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-80 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-80 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-80 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-80 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-81 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-81 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-81 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-81 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-81 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-81 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-81 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-82 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-82 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-82 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-82 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-82 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-82 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-82 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-83 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-83 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-83 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-83 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-83 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-83 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-83 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-84 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-84 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-84 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-84 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-84 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-84 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-84 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-85 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-85 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-85 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-85 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-85 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-85 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-85 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-86 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-86 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-86 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-86 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-86 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-86 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-86 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-87 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-87 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-87 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-87 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-87 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-87 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-87 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-88 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-88 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-88 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-88 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-88 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-88 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-88 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-89 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-89 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-89 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-89 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-89 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-89 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-89 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-90 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-90 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-90 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-90 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-90 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-90 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-90 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-91 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-91 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-91 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-91 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-91 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-91 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-91 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-92 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-92 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-92 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-92 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-92 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-92 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-92 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-93 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-93 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-93 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-93 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-93 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-93 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-93 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-94 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-94 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-94 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-94 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-94 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-94 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-94 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-95 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-95 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-95 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-95 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-95 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-95 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-95 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-96 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-96 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-96 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-96 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-96 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-96 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-96 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-97 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-97 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-97 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-97 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-97 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-97 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-97 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-98 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-98 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-98 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-98 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-98 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-98 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-98 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-99 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-99 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-99 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-99 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-99 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-99 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-99 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-100 {
+    width: 30px;
+    height: 40px;
+    border: 1px dotted #919190;
+    box-shadow: inset 0 0 10px; }
+    .card-container .card-grid .card-100 .card-content .name {
+      display: none; }
+    .card-container .card-grid .card-100 .card-content .card-box .card-perspective .card-transform .front {
+      width: 100%;
+      height: 100%; }
+      .card-container .card-grid .card-100 .card-content .card-box .card-perspective .card-transform .front img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-100 .card-content .card-box .card-perspective .card-transform .back {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .card-container .card-grid .card-100 .card-content .card-box .card-perspective .card-transform .back img {
+        width: inherit;
+        height: inherit; }
+    .card-container .card-grid .card-100 .card-content .card-box .card-data {
+      display: none; }
+  .card-container .card-grid .card-view {
+    width: 100%;
+    height: 600px;
+    top: 0;
+    left: 0;
+    background: #000000;
+    position: absolute;
+    border: none;
+    box-shadow: none;
+    overflow: hidden; }
+    .card-container .card-grid .card-view .card-content {
+      width: 100%;
+      max-width: 600px;
+      margin: 30px auto;
+      color: #ffffff; }
+      .card-container .card-grid .card-view .card-content .name {
+        display: block;
+        background: #919190;
+        padding: 8px; }
+        .card-container .card-grid .card-view .card-content .name p {
+          background: #101009;
+          max-width: 40px;
+          text-align: center;
+          padding: 4px;
+          font-weight: 400; }
+        .card-container .card-grid .card-view .card-content .name h3 {
+          background: #101009;
+          padding: 4px;
+          margin-top: 8px;
+          font-weight: 600; }
+      .card-container .card-grid .card-view .card-content .card-box {
+        display: flex; }
+        .card-container .card-grid .card-view .card-content .card-box .card-perspective {
+          background: transparent;
+          width: 400px;
+          height: 300px;
+          perspective: 1000px; }
+          @media only screen and (max-width: 600px) {
+            .card-container .card-grid .card-view .card-content .card-box .card-perspective {
+              width: 300px;
+              height: 250px; } }
+          .card-container .card-grid .card-view .card-content .card-box .card-perspective .card-transform {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 1s;
+            transform-style: preserve-3d; }
+          .card-container .card-grid .card-view .card-content .card-box .card-perspective .card-transform {
+            transform: rotateY(-180deg); }
+          .card-container .card-grid .card-view .card-content .card-box .card-perspective .front, .card-container .card-grid .card-view .card-content .card-box .card-perspective .back {
+            position: absolute;
+            backface-visibility: hidden; }
+            .card-container .card-grid .card-view .card-content .card-box .card-perspective .front img, .card-container .card-grid .card-view .card-content .card-box .card-perspective .back img {
+              animation: cardBox 0.4s; }
+          .card-container .card-grid .card-view .card-content .card-box .card-perspective .back {
+            display: block !important;
+            transform: rotateY(-180deg); }
+        .card-container .card-grid .card-view .card-content .card-box .card-data {
+          display: block;
+          width: 100%;
+          background: #919190;
+          padding: 8px;
+          overflow: hidden; }
+          .card-container .card-grid .card-view .card-content .card-box .card-data .type {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #151d3d 0%, #222c54 100%);
+            padding: 4px; }
+            .card-container .card-grid .card-view .card-content .card-box .card-data .type img {
+              width: 20px;
+              height: 20px; }
+            .card-container .card-grid .card-view .card-content .card-box .card-data .type h2 {
+              margin-left: 10px;
+              font-weight: 600; }
+          .card-container .card-grid .card-view .card-content .card-box .card-data .guardian {
+            background: linear-gradient(135deg, #151d3d 0%, #222c54 100%);
+            padding: 4px;
+            margin: 8px 0; }
+            .card-container .card-grid .card-view .card-content .card-box .card-data .guardian h3 {
+              margin-bottom: 4px;
+              font-weight: 600; }
+            .card-container .card-grid .card-view .card-content .card-box .card-data .guardian .elem1, .card-container .card-grid .card-view .card-content .card-box .card-data .guardian .elem2 {
+              display: flex;
+              align-items: center; }
+              .card-container .card-grid .card-view .card-content .card-box .card-data .guardian .elem1 h4, .card-container .card-grid .card-view .card-content .card-box .card-data .guardian .elem2 h4 {
+                margin-right: 10px;
+                margin-left: 10px;
+                font-weight: 600; }
+              .card-container .card-grid .card-view .card-content .card-box .card-data .guardian .elem1 p, .card-container .card-grid .card-view .card-content .card-box .card-data .guardian .elem2 p {
+                font-weight: 400; }
+          .card-container .card-grid .card-view .card-content .card-box .card-data .txt {
+            background: linear-gradient(135deg, #151d3d 0%, #222c54 100%);
+            padding: 4px;
+            height: 100%; }
+            .card-container .card-grid .card-view .card-content .card-box .card-data .txt p {
+              font-weight: 400; }
+@keyframes cardBox {
+  from {
+    transform: scale(0.4); }
+  to {
+    transform: scale(1); } }
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: #000000;
+  cursor: none;
+  overflow-x: hidden;
+  font-family: "Nunito", sans-serif; }
+
+#lupa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1; }
+  #lupa div:nth-child(1) {
+    border: 1px outset #2dd122;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    animation: border 2s infinite;
+    box-shadow: 0 0 3px #2dd122; }
+  #lupa div:nth-child(2) {
+    border: 1px outset #2dd122;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    transform: rotate(90);
+    animation: border 2s infinite;
+    box-shadow: 0 0 3px #2dd122; }
+  #lupa div:nth-child(3) {
+    width: 19px;
+    height: 19px;
+    position: fixed;
+    font-size: 25px;
+    color: #778cff;
+    background: #ffffff;
+    box-shadow: inset -2px -2px 5px #0d50a1;
+    border-radius: 50%; }
+
+@keyframes border {
+  25% {
+    opacity: 0.1; }
+  100% {
+    opacity: 1; } }
+.card-container h1 {
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600; }
+.card-container .card-comment {
+  width: 100%;
+  max-width: 320px;
+  background: #919190;
+  color: #ffffff;
+  padding: 8px;
+  margin-top: 10px; }
+  .card-container .card-comment p {
+    background: #101009;
+    max-width: 40px;
+    text-align: center;
+    padding: 4px;
+    font-weight: 400; }
+  .card-container .card-comment h3 {
+    background: #101009;
+    padding: 4px;
+    margin-top: 8px;
+    font-weight: 600; }
+
+/*# sourceMappingURL=main.css.map */
