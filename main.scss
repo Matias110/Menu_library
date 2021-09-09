@@ -77,7 +77,7 @@ $animation: border 2s infinite;
         .name {
           display: none;
         }
-        .card-box {
+        .card-status {
           .card-perspective {
             .card-transform {
               .front {
@@ -139,11 +139,11 @@ $animation: border 2s infinite;
           font-weight: $fontSemiBold;
         }
       }
-      .card-box {
+      .card-status {
         display: flex;
         .card-perspective {
           background: transparent;
-          width: 400px;
+          width: 350px;
           height: 300px;
           @include responsive($maxWidthcontent) {
             width: 300px;
@@ -238,7 +238,6 @@ $animation: border 2s infinite;
 /*-----------------------------*\
      $EXTEND
 \*-----------------------------*/
-
 %grid__content {
   width: $porcentWidth;
   max-width: $maxWidth;
@@ -259,7 +258,6 @@ body {
   overflow-x: hidden;
   font-family: $fontFamily;
 }
-//LUPA ANIMADA
 #lupa {
   position: absolute;
   top: 0;
