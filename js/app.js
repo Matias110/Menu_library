@@ -5,14 +5,13 @@ window.onload = function() {
   const infoTick = new Audio('./sfx/infotick.wav');
   const infoUp = new Audio('./sfx/infoup.wav');
   const infoDown = new Audio('./sfx/infodown.wav');
-  menuLibrary.play();
-  menuLibrary.loop = true;
   const lupa = document.getElementById("lupa");
   const titleCard = document.querySelector("h1");
   const allCard = document.querySelectorAll(".back img");
   const write = document.querySelector(".txt");
   const comment = document.querySelector(".card-comment");
   const selectCard = document.getElementById("selectCard").children;
+  //PLAY MUSIC
   menuLibrary.play();
   menuLibrary.loop = true;
   //ALL CARD
