@@ -11,13 +11,16 @@ window.onload = function() {
   const write = document.querySelector(".txt");
   const comment = document.querySelector(".card-comment");
   const selectCard = document.getElementById("selectCard").children;
+
   //PLAY MUSIC
   menuLibrary.play();
   menuLibrary.loop = true;
+
   //ALL CARD
   for (let i = 0; i < allCard.length; i++) {
     titleCard.textContent = `<${i + 1}/100>`;
   }
+
   //STATUS CARD
   const statsCard = {
     blueEyesWhiteDragon: {
@@ -93,6 +96,7 @@ window.onload = function() {
       }
     }, 30);
   };*/
+  
   //CARD VIEW
   for (let i = 0; i < selectCard.length; i++) {
     selectCard[i].addEventListener("click", () => {
